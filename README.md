@@ -1,2 +1,2 @@
-# boilerplate
-Custom boilerplate for testing and playing around
+# sass-project
+Project files for SASS course
