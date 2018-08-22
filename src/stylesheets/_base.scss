@@ -1,0 +1,34 @@
+/* Default */
+
+@import 'vendor/base';
+@import 'abstracts/base';
+@import 'default/base';
+
+
+@media (min-width: 768px) { 
+	@import 'md-up/base';
+}
+
+@media (min-width: 992px) { 
+    @import 'lg-up/base';
+ }
+
+@media (min-width: 1200px) { 
+    @import 'xl/base';
+ }
+
+@media (max-width: 992px) { 
+	@import 'md-down/base';
+}
+
+@media (max-width: 767px) { 
+	@import 'sm-down/base';
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+ @import 'md/base';
+}
+
+
+
+

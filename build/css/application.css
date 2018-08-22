@@ -1,0 +1,8 @@
+/* Default */
+@keyframes stickyHeader {
+  0% {
+    top: -68px;
+    opacity: 0; }
+  100% {
+    top: 0;
+    opacity: 1; } }
