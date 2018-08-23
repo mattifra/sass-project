@@ -5,7 +5,7 @@ var gulp = require('gulp'),
 
 
 gulp.task('sass', function () {
-gulp.src('src/stylesheets/application.scss')
+gulp.src('src/stylesheets/main.scss')
   .pipe(sass().on('error', sass.logError))
   .pipe(gulp.dest('build/css'));
 });

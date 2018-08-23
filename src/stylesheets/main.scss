@@ -1,0 +1,341 @@
+/*********** GENERAL ***********/
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+  font-size: 1.6rem;
+  margin: 0;	
+}
+
+
+a {
+	text-decoration: none;
+	font-size: 1.4rem;
+	color: #000;
+}
+
+.btn {
+	display: inline-block;
+	border-radius: 50px;
+	padding: 14px 28px;
+	color: #0ACE99;
+	text-transform: uppercase;
+	border: 1px solid #0ACE99;
+	font-size: 1.4rem;
+	transition: all .3s;
+	background: transparent;
+	cursor: pointer;
+}
+
+.btn:hover {
+	background: #0ACE99;
+	color: #fff;
+}
+
+.container {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.active {
+	background: #0ACE99;
+	border-radius: 3px;
+}
+
+img {
+	width: 100%;
+}
+
+.title {
+	font-size: 2.2rem;
+}
+
+main {
+	min-height: calc(100vh - 138.5px - 104px);
+	padding-top: 68.5px;
+}
+
+
+
+
+/*********** HEADER ***********/
+
+header {
+	background: #7e0db3;
+	text-align: center;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+	box-shadow: 0 3px 2px rgba(0, 0, 0, .4);
+}
+
+header .logo-container {
+	padding: 8px;
+}
+
+header img {
+	width: 120px;
+}
+
+/*********** NAVIGATION ***********/
+
+
+header nav {
+	background: #8f22c2;
+	padding: 10px;
+}
+
+header nav ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+header nav li {
+	display: inline-block;
+}
+
+header nav li a {
+	color: #fff;
+	display: inline-block;
+	padding: 5px 10px;
+	text-transform: uppercase;
+}
+
+/************ GALLERY **********/
+
+.hero {
+	background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .2)), url(../images/iphone-bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed; 
+	color: #fff;
+}
+
+.hero .hero-caption {
+	padding: 140px 20px;
+	max-width: 600px;
+}
+
+.hero .title {
+	font-size: 28px;
+}
+
+.hero .subtitle {
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.hero .btn {
+	margin-top: 30px;
+}
+
+
+/************ CONTACT **********/
+
+#contact ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+#contact li {
+	padding: 5px 0;
+}
+
+
+/************ FORM **********/
+
+#contact-form {
+	background-color: #7e0db3;
+	background-image: url(../images/world.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: 30px 0;
+	color: #fff;;
+}
+
+#contact-form  .title {
+	padding: 0 15px;
+}
+
+#contact-form  .submit {
+	text-align: center;
+	padding: 15px 0;
+}
+
+.form-group {
+	padding: 0 0 10px;
+}
+
+#contact-form input, #contact-form textarea,  #contact-form select {
+	display: block;
+	width: 100%;
+	border: 1px solid  #D8D8D8;
+}
+
+#contact-form label {
+	display: block;
+	padding-bottom: 5px;
+}
+
+#contact-form input {
+	height: 40px;
+	border-radius: 3px;
+}
+
+#contact-form textarea {
+	border-radius: 3px;
+}
+
+
+.form-wrapper .message, .form-wrapper .info {
+	flex: 1;
+	padding: 15px;
+}
+
+.form-wrapper .message .form-group {
+	height: 100%;
+}
+
+.form-wrapper .message textarea {
+	height: calc(100% - 23px);
+}
+
+/***** FOOTER ********/
+
+footer.main {
+	text-align: center;
+	padding: 15px;
+}
+
+footer.main img {
+	width: 24px;
+}
+
+footer.main a {
+	display: inline-block;
+	padding: 5px 10px;
+}
+
+footer.main p {
+	font-size: 1.2rem;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+
+	header .container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	header nav {
+		background: transparent;
+	}
+
+	/************ GALLERY **********/
+
+	#gallery .item {
+		width: 33.3333%;
+	}
+
+	#gallery .item:nth-child(3n + 1) {
+		clear: left;
+	}
+
+	/************ FEATURES **********/
+
+
+	.features {
+		padding: 100px 0;
+		text-align: center;
+	}
+	
+
+
+	/************ CONTACTS **********/
+
+	#contact .info, #contact .contacts {
+		padding: 15px;
+	}
+
+
+	#contact .info {
+		float: left;
+		width: 70%;
+	}
+
+	#contact .contacts {
+		float: right;
+		width: 30%;
+	}
+
+	.form-wrapper {
+		display: flex;
+	}
+
+	
+}
+
+
+@media only screen and (min-width: 992px) {
+
+	nav li a {
+		transition: background .3s;
+	}
+
+	nav li a:hover {
+		background: #0d9b75;
+		border-radius: 3px;
+	}
+
+	#gallery .item {
+	 transition: opacity .3s;
+	}
+
+	#gallery .item:hover {
+	 opacity: .7;
+	}
+	
+}
+
+
+@media only screen and (max-width: 767px) {
+
+	nav {
+		margin: 0 -15px;
+	}
+
+/************ GALLERY **********/
+
+	#gallery .item:nth-child(2n + 1) {
+		clear: left;
+	}
+	
+}
+
+
+
+
+
+
+

@@ -5,10 +5,91 @@
     <meta charset="utf-8">
     <title>Custom Boilerplate</title>
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+  
     <!-- CSS -->
-    <link href="build/css/application.css" rel="stylesheet">
+    <link href="build/css/main.css" rel="stylesheet">
   </head>
   <body>
-    <h1>Hi</h1>
+    <header>
+      <div class="container">
+        <div class="logo-container">
+          <a href="index.html">
+            <img src="build/images/my-logo.png" alt="Logo"/>
+          </a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#contact-form">Contatti</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main id="main-content">
+      <section id="hero" class="hero">
+        <div class="container">
+          <div class="hero-caption">
+            <h1 class="title">This is the best App around!</h1>
+            <h2 class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
+            <a href="#gallery" class="btn">Have a look</a>
+          </div>
+        </div>
+      </section>
+      
+      <section id="features" class="features">
+        <div class="container">
+          <p>FEATURES</p>
+        </div>
+      </section>
+      <section id="contact-form">
+        <div class="container">
+          <h2 class="title">Contact us</h2>
+          <form action="/my-handling-form-page" method="post">
+            <div class="form-wrapper">
+              <div class="info">
+                <div class="form-group">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="user_name">
+                </div>
+                <div class="form-group">
+                  <label for="mail">E-mail:</label>
+                  <input type="email" id="mail" name="user_mail">
+                </div>
+                <div class="form-group reason">
+                  <label for="select">Motivo del contatto:</label>
+                  <select name="select" class="field-select">
+                    <option value="Advertise">Advertise</option>
+                    <option value="Partnership">Partnership</option>
+                    <option value="General Question">General</option>
+                  </select>
+                </div>
+              </div>
+              <div class="message">
+                <div class="form-group">
+                  <label for="msg">Message:</label>
+                  <textarea id="msg" name="user_message"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="submit"> 
+              <button type="submit" class="btn">Submit</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="main">
+      <div class="social">
+        <a href="https://www.facebook.com/lacerba.io/" target="_blank">
+          <img src="build/images/facebook-black.png" alt="facebook"/>
+        </a>
+        <a href="https://twitter.com/Lacerba_io" target="_blank">
+          <img src="build/images/twitter-black.png" alt="twitter"/>
+        </a>
+      </div>
+      <p>Copyright 2018</p>
+    </footer>
   </body>
 </html>
