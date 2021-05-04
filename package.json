@@ -19,7 +19,7 @@
   "dependencies": {
     "bootstrap": "^3.3.7",
     "bootstrap-sass": "^3.3.7",
-    "clean-css": "^4.1.9",
+    "clean-css": "^4.1.11",
     "gulp-concat": "^2.6.1",
     "gulp-minify-css": "^1.2.4",
     "gulp-uglify": "^3.0.0",
