@@ -17,7 +17,7 @@
     "gulp-webserver": "^0.9.1"
   },
   "dependencies": {
-    "bootstrap": "^3.3.7",
+    "bootstrap": "^3.4.1",
     "bootstrap-sass": "^3.3.7",
     "clean-css": "^4.1.9",
     "gulp-concat": "^2.6.1",
